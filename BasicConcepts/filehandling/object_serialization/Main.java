@@ -22,7 +22,7 @@ public class Main {
 
             ObjectOutputStream objectOutputStream = new ObjectOutputStream(new FileOutputStream(file, false));
 
-            objectOutputStream.write(contacts.size());
+            objectOutputStream.write(contacts.size());  //Caution!
 
             for (Contact aContact : contacts)
                 objectOutputStream.writeObject(aContact);
